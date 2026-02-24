@@ -20,6 +20,32 @@ Three source datasets (not included in repo due to size):
 
 These are joined into `joined_data.parquet` (~12.5M rows, 37 columns) by `join_data.R`.
 
+See [`codebook.md`](codebook.md) for full variable definitions, types, and missingness rates.
+
+### Joined Dataset Summary
+
+| Metric | Value |
+|--------|-------|
+| Rows | 12,548,844 |
+| Columns | 37 |
+| Date range | 2020-01-01 to 2022-12-30 |
+| Total locations | 20,906 |
+| Country-level locations | 232 |
+
+**Key variable coverage (% non-missing):**
+
+| Variable | Coverage |
+|----------|----------|
+| `new_confirmed` | 99.4% |
+| `new_deceased` | 93.0% |
+| `population` | 97.0% |
+| `new_recovered` | 31.7% |
+| `new_tested` | 25.5% |
+| `new_hospitalized_patients` | 13.1% |
+| `human_development_index` | 41.6% |
+
+**Note:** Recovery, testing, and hospitalization data have high missingness because many countries did not report these metrics. HDI and urbanization data are primarily available at the country level. Analyses in this project filter to country-level records where key variables are present.
+
 ## Scripts
 
 | Script | Description |
