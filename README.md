@@ -8,6 +8,8 @@ Exploratory analysis of how country-level development (HDI), urbanization, popul
 
 ## Data
 
+Source: [Google Health COVID-19 Open Data](https://health.google.com/covid-19/open-data/raw-data)
+
 Three source datasets (not included in repo due to size):
 
 | File | Description | Size |
